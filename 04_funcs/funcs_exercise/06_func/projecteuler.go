@@ -4,15 +4,15 @@ import "fmt"
 
 func max(numbers ...int) int {
 	var greatest int
-	for _, x := range numbers {
-		if x > greatest {
-			greatest = x
+	for _, v := range numbers {
+		if v > greatest {
+			greatest = v
 		}
 	}
 	return greatest
 }
 
 func main() {
-	largest := max(3, 4, 5, 6, 7, 8, 9, 92)
+	largest := max(2, 3, 45, 66, 432, 56, 544, 55, 644, 323)
 	fmt.Println(largest)
 }
